@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여기 어땨</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <span id="hidden-for-top">hidden-for-top</span>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <a href="index.html"
+          ><hgroup>
+            <center>
+              <h1 class="master-title">백석대학교 마스터</h1>
+              <h2 class="master-description">학교생활의 모든 것을 알아보자!</h2>
+            </center>
+          </hgroup></a
+        >
+      </header>
+
+      <nav id="main-navigation">
+        <div class="pull-left">
+          <ul class="outer-menu">
+            <li class="outer-menu-item">
+              <!-- 상단 네비게이션 항목 -->
+              <a href="menu_Schedule.html"
+                ><span class="menu-title">학사일정</span></a
+              >
+            </li>
+            <li class="outer-menu-item">
+              <a href="menu_CampusTour.html"
+                ><span class="menu-title">캠퍼스 투어</span></a
+              >
+            </li>
+            <li class="outer-menu-item">
+              <a href="menu_Restaurant.html"
+                ><span class="menu-title">먹거리</span></a
+              >
+            </li>
+            <li class="outer-menu-item">
+              <a href="menu_Enjoy.html"
+                ><span class="menu-title">놀거리</span></a
+              >
+            </li>
+            <li class="outer-menu-item">
+              <a href="menu_Traffic.html"
+                ><span class="menu-title">교통</span></a
+              >
+            </li>
+            <li class="outer-menu-item">
+              <a href="menu_Notice.html"
+                ><span class="menu-title">공지사항</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="pull-right">
+          <div class="search-bar">
+            <form>
+              <input type="text" class="input-search" />
+              <input type="submit" class="input-search-submit" value="검색" />
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="content">
+        <div id="clock-index"><span><img id="cal-img" width="50px" src="IMG/calendar.png"></span>
+          <span id="cal">0000-00-00</span><br><span><img id="clock-index-img" width="50px" src="IMG/time.png" /></span>
+          <span id="clock-index-time">00:00</span>
+        </div>
+        
+        <div id="memo-place">
+          <h2><img width="50px" src="IMG/memo.png">Memo</h2><br><br>
+          <div id="memo-border">
+            <form id="todo-form">
+              <input id="todo-input" type="text" placeholder="메모 작성 후 엔터" required />
+            </form>
+            <ul id="todo-list"></ol>
+          </div>
+        </div>
+      </div>
+      <footer id="main-footer">
+        <a href="#hidden-for-top"
+          ><img
+            id="top-img"
+            width="30"
+            src="https://visit.semes.com/image/common/btn_top.png"
+        /></a>
+      </footer>
+    </div>
+    <script src="JS/clock-index.js"></script>
+    <script src="JS/memo.js"></script>
+  </body>
+</html>
