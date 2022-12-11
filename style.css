@@ -1,5 +1,4 @@
 /*크게 header, navigation, section, aside, footer로 배치*/
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +21,9 @@ a {
   color: white;
 }
 .outer-menu > li {
+  list-style: none;
+}
+#todo-list > li {
   list-style: none;
 }
 .pull-left {
@@ -168,7 +170,8 @@ article {
 
 .notice-table-tr {
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .notice-table-tr > img {
   margin-bottom: 10px;
@@ -180,7 +183,7 @@ article {
 .notice-table-tr > td:hover {
   transform: scale(1.25);
   transition: transform 0.2s;
-  background-color: rgba(116, 161, 199, 0.4);
+  /* background-color: rgba(116, 161, 199, 0.4); */
   border-radius: 20px;
 }
 #clock {
@@ -261,39 +264,93 @@ article {
   width: 100%;
 }
 .tour-table {
-  border: 5px solid black;
   width: 100%;
   margin-bottom: 100px;
-  table-layout: fixed;
+  border-radius: 15px;
 }
 
 .tour-title-td {
-  border: 5px solid powderblue;
   font-size: 40px;
   text-align: center;
   padding: 20px;
 }
 .tour-img-td {
-  border: 5px solid blue;
   margin: auto;
+  width: 50%;
+  text-align: center;
 }
 .tour-img {
   width: 100%;
+  height: 100%;
 }
 .tour-info-td {
-  border: 5px solid red;
   padding: 15px;
 }
-.tour-map {
-  border: 5px solid green;
-}
+
 .tour-map > div {
   margin: auto;
 }
 .place-div {
-  margin: 30px;
-  padding: 30px;
+  text-align: center;
+  position: fixed;
+  width: 200px;
+  display: inline-block;
+  right: 50px; /* 창에서 오른쪽 길이 */
+  top: 15%; /* 창에서 위에서 부터의 높이 */
+  background-color: rgb(230, 253, 221);
+  border-radius: 20px;
+  border: 3px solid black;
 }
 .place-list > a:hover {
   text-decoration: underline;
+}
+.tour-tr {
+  height: 50px;
+}
+#campus-picture {
+  border-radius: 10px;
+}
+.place-ul {
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.place-list {
+  font-weight: bolder;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+#place-goto-div {
+  padding: 10px;
+  border-bottom: 3px solid black;
+}
+.info-li {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+.rest-table {
+  border-collapse: collapse;
+  border: 5px solid powderblue;
+  table-layout: fixed;
+  border-radius: 15px;
+  border-style: hidden;
+  box-shadow: 0 0 0 5px powderblue;
+}
+
+.rest-table-tr {
+  border: 5px solid powderblue;
+  text-align: center;
+  font-size: 17px;
+}
+.rest-table-td {
+  border: 5px solid powderblue;
+  text-align: center;
+  font-size: 17px;
+}
+.rest-table-tr > img {
+  margin-bottom: 10px;
+}
+.rest-table-image {
+  margin-bottom: 10px;
 }

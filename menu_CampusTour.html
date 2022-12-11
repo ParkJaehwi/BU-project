@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>여기 어땨</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      td {
+        border: 5px solid green;
+      }
+      table {
+        border-collapse: collapse;
+        border-radius: 15px;
+        border-style: hidden;
+        box-shadow: 0 0 0 5px green;
+      }
+    </style>
   </head>
   <body>
     <span id="hidden-for-top">hidden-for-top</span>
@@ -74,17 +85,27 @@
           <article>
             <div class="article-header">
               <h1 class="article-title">백석대 조감도</h1>
+              <br />
               <img
+                id="campus-picture"
                 border="3px solid black"
                 width="100%"
                 src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdQjYBX%2FbtqvK5ZjRIX%2F7rF80ImfKO3RDBzUfvPuMK%2Fimg.jpg"
                 alt="백석대학교 조감도"
               />
             </div>
+            <br /><br /><br /><br />
             <div class="article-body">
               <h1 class="article-title">상세위치</h1>
+              <br />
               <div class="place-div">
-                <ol>
+                <div id="place-goto-div">
+                  <h3 id="place-goto-h3">
+                    [ &nbsp;<img src="IMG/shortcut.png" width="18px" /> 바로가기
+                    &nbsp;]
+                  </h3>
+                </div>
+                <ul class="place-ul">
                   <li class="place-list"><a href="#진리관">진리관</a></li>
                   <li class="place-list"><a href="#자유관">자유관</a></li>
                   <li class="place-list"><a href="#음악관">음악관</a></li>
@@ -117,10 +138,10 @@
                     <a href="#글로벌외식산업관">글로벌외식산업관</a>
                   </li>
                   <li class="place-list">
-                    <a href="#베데스다 공원">베데스다 공원</a> 공원
+                    <a href="#베데스다 공원">베데스다 공원</a>
                   </li>
                   <li class="place-list"><a href="#카페 뷰리">카페 뷰리</a></li>
-                </ol>
+                </ul>
               </div>
 
               <div class="table-whole-div">
@@ -147,7 +168,21 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">진리관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">B1F - CU편의점</li>
+                            <li class="info-li">
+                              1F - ATM(신한은행), 신한은행 출장소
+                            </li>
+                            <li class="info-li">1F - 보건실</li>
+                            <li class="info-li">1F - 우편취급국</li>
+                            <li class="info-li">
+                              1F - 백향서점 (교양서적), 서점 (전공서적)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -172,7 +207,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">자유관 정보</td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -197,7 +232,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">음악관 정보</td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -222,7 +257,14 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">교수회관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">1F - 학생식당</li>
+                            <li class="info-li">2F - 교수식당</li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -247,7 +289,14 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">인성관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">1F - ATM (신한은행)</li>
+                            <li class="info-li">1F - 증명서 발급기</li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -272,7 +321,16 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">목양관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">1F - 인쇄소</li>
+                            <li class="info-li">
+                              학부사무실: 기독교학부 (103호)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -297,7 +355,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">은혜관 정보</td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -322,7 +380,17 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">지혜관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">1F - 흡연장</li>
+                            <li class="info-li">3F - CU편의점</li>
+                            <li class="info-li">
+                              학부사무실: 경상학부 (609호)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -347,7 +415,21 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">학생복지관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">B1F - 밀겨울 식당</li>
+                            <li class="info-li">B1F - 인쇄소</li>
+                            <li class="info-li">
+                              B1F - 통학버스 티켓 판매 사무실
+                            </li>
+                            <li class="info-li">1F - 세븐일레븐 편의점</li>
+                            <li class="info-li">
+                              1F - ATM (신한은행, 국민은행)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -361,7 +443,7 @@
                         <img
                           class="tour-img"
                           src="https://www.bu.ac.kr/sites/web/atchmnfl_mngr/campusMap/temp_1577861445490100.jpg"
-                          alt="학생복지관 이미지"
+                          alt="백석홀 이미지"
                         />
                       </td>
                       <td class="tour-map">
@@ -372,7 +454,13 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">백석홀 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">대강당, 소강당</li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -397,7 +485,21 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">본부동 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">1F - ATM (신한, 국민, 농협)</li>
+                            <li class="info-li">1F - 증명서 발급기</li>
+                            <li class="info-li">6F - CU편의점</li>
+                            <li class="info-li">6F - 인쇄소</li>
+                            <li class="info-li">
+                              학부사무실: 어문학부 (301호), 관광학부 (411호),
+                              혁신융합학부 (511호), 사범학부 (601호), 경찰학부
+                              (715호), 컴퓨터공학부 (715호), 첨단IT학부 (7층)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -423,7 +525,18 @@
                     </tr>
                     <tr class="tour-info-tr">
                       <td class="tour-info-td" colspan="2">
-                        백석학술정보관 정보
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">
+                              학기중 09:00~20:00(월~목), 18:00(금) / 방학중 별도
+                              공지. 토, 일, 공휴일, 개교기념일 휴관 <br />
+
+                              제1자유열람실 06:00~23:00 118석 / 제2자유열람실
+                              06:00~18:00 116석 / 멀티자료실 146석
+                            </li>
+                            <li class="info-li">1F - 세븐일레븐 편의점</li>
+                          </ul>
+                        </div>
                       </td>
                     </tr>
                   </table>
@@ -449,7 +562,16 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">예술대학동 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">
+                              학부사무실: 예술학부 (105호)
+                            </li>
+                            <li class="info-li">5F - 카페테리아, 휴게공간</li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -474,7 +596,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">창조관 정보</td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -499,7 +621,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">승리관 정보</td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -524,7 +646,15 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">체육관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">
+                              학부사무실: 스포츠과학부 (302호)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -549,7 +679,18 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">조형관 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">1F - CU편의점</li>
+                            <li class="info-li">1F - ATM (신한은행)</li>
+                            <li class="info-li">1F - 복사점</li>
+                            <li class="info-li">
+                              학부사무실: 보건학부, 디자인영상학부 (309호)
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -574,7 +715,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">백석생활관 정보</td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -603,16 +744,12 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">
-                        글로벌외식산업관 정보
-                      </td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
-                  <table class="tour-table">
+                  <table class="tour-table" id="베데스다 공원">
                     <tr class="tour-title-tr">
-                      <td id="베데스다 공원" class="tour-title-td" colspan="2">
-                        베데스다 공원
-                      </td>
+                      <td class="tour-title-td" colspan="2">베데스다 공원</td>
                     </tr>
                     <tr class="tour-tr">
                       <td class="tour-img-td">
@@ -630,9 +767,7 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">
-                        베데스다 공원 정보
-                      </td>
+                      <td class="tour-info-td" colspan="2"></td>
                     </tr>
                   </table>
                   <table class="tour-table">
@@ -657,7 +792,17 @@
                       </td>
                     </tr>
                     <tr class="tour-info-tr">
-                      <td class="tour-info-td" colspan="2">카페 뷰리 정보</td>
+                      <td class="tour-info-td" colspan="2">
+                        <div class="info-div">
+                          <ul class="info-ul">
+                            <li class="info-li">베데스다 공원 내 위치</li>
+                            <li class="info-li">
+                              영업시간 09:00 ~ 17:00 (월~목)
+                            </li>
+                            <li class="info-li">영업시간 09:00 ~ 16:00 (금)</li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </table>
                 </div>
@@ -689,8 +834,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670493749247",
         key: "2cwxk",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -699,8 +844,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670490736546",
         key: "2cwwq",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -709,8 +854,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670501709236",
         key: "2cwyz",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -719,8 +864,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503034086",
         key: "2cwy4",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -729,8 +874,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503106078",
         key: "2cwy5",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -739,8 +884,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503168918",
         key: "2cwy6",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -749,8 +894,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503238698",
         key: "2cwy7",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -759,8 +904,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503295713",
         key: "2cwy8",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -769,8 +914,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503339666",
         key: "2cwy9",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -779,8 +924,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503396373",
         key: "2cwya",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -789,8 +934,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503456191",
         key: "2cwyb",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -799,8 +944,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503505357",
         key: "2cwyc",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -809,8 +954,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503559712",
         key: "2cwyd",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -819,8 +964,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503676545",
         key: "2cwye",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -829,8 +974,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503742593",
         key: "2cwyf",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -839,8 +984,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503787579",
         key: "2cwyj",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -849,8 +994,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503828871",
         key: "2cwyk",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -859,8 +1004,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503886360",
         key: "2cwym",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -869,8 +1014,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670503997962",
         key: "2cwyn",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -879,8 +1024,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670504175002",
         key: "2cwyo",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
 
@@ -889,8 +1034,8 @@
       new daum.roughmap.Lander({
         timestamp: "1670504295703",
         key: "2cwyp",
-        mapWidth: "432",
-        mapHeight: "400",
+        mapWidth: "448",
+        mapHeight: "412",
       }).render();
     </script>
   </body>
