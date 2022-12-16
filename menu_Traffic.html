@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>여기 어땨</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      ol {
+        list-style: none;
+      }
+      td {
+        border: 5px solid green;
+      }
+      table {
+        border-collapse: collapse;
+        border-radius: 15px;
+        border-style: hidden;
+        box-shadow: 0 0 0 5px green;
+      }
+      .tour-img-td > img {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <span id="hidden-for-top">hidden-for-top</span>
@@ -73,9 +90,519 @@
         <section id="main-section">
           <article>
             <div class="article-header">
-              <h1 class="article-title">교통</h1>
+              <h1 class="article-title">교통수단 정보</h1>
             </div>
-            <div class="article-body"></div>
+            <div class="article-body">
+              <table
+                class="notice-table"
+                width="100%"
+                height="180px"
+                border-spacing="180px"
+              >
+                <caption>
+                  <h2>&#60; 버스 &#62;</h2>
+                  <br />
+                </caption>
+                <tr class="notice-table-tr">
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://www.bu.ac.kr/web/4886/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd2ViJTJGMTMyOCUyRjI0NTc1JTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNmJic0NsU2VxJTNEJTI2YmJzT3BlbldyZFNlcSUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZpc1ZpZXdNaW5lJTNEZmFsc2UlMjZwYXNzd29yZCUzRCUyNg%3D%3D"
+                      ><img
+                        class="notice-table-image"
+                        width="80px"
+                        src="IMG/bus.png"
+                      /><br />버스</a
+                    >
+                  </td>
+                </tr>
+              </table>
+              <br /><br /><br /><br /><br />
+              <table
+                class="tour-table"
+                width="100%"
+                height="540px"
+                border-spacing="180px"
+              >
+                <caption>
+                  <h1>
+                    -----------------------통학버스----------------------------------------------------------셔틀버스--------------------------------
+                  </h1>
+                  <br />
+                </caption>
+
+                <tr>
+                  <td class="tour-img-td">
+                    <img width="400px" height="500px" src="IMG/100.png" />
+                  </td>
+                  <td class="tour-img-td">
+                    <img width="400px" height="500px" src="IMG/101.png" />
+                  </td>
+                </tr>
+              </table>
+              <br /><br /><br /><br /><br />
+              <div class="place-div">
+                <div id="place-goto-div">
+                  <h3 id="place-goto-h3">[ &nbsp; 상세위치 &nbsp;]</h3>
+                </div>
+                <ol>
+                  <li class="place-list"><a href="#교대">교대</a></li>
+                  <li class="place-list"><a href="#분당,성남">분당,성남</a></li>
+                  <li class="place-list"><a href="#죽전">죽전</a></li>
+                  <li class="place-list"><a href="#송내">송내</a></li>
+                  <li class="place-list"><a href="#잠실">잠실</a></li>
+                  <li class="place-list">
+                    <a href="#문학경기장">문학경기장</a>
+                  </li>
+                  <li class="place-list"><a href="#영등포">영등포</a></li>
+                  <li class="place-list"><a href="#안산">안산</a></li>
+                  <li class="place-list"><a href="#수원">수원</a></li>
+                  <li class="place-list"><a href="#안양">안양</a></li>
+                  <li class="place-list">
+                    <a href="#용인(신갈)">용인(신갈)</a>
+                  </li>
+                  <li class="place-list"><a href="#동탄">동탄</a></li>
+                  <li class="place-list"><a href="#병점,오산">병점,오산</a></li>
+                  <li class="place-list">
+                    <a href="#셔틀버스등교">학교 셔틀버스 (등교)</a>
+                  </li>
+                  <li class="place-list">
+                    <a href="#셔틀버스하교">학교 셔틀버스 (하교)</a>
+                  </li>
+                </ol>
+              </div>
+              <h1 class="article-title">상세위치</h1>
+              <br /><br />
+
+              <div class="table-whole-div">
+                <div class="table-div">
+                  <table id="교대" class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td class="tour-title-td" colspan="2">교대</td>
+                    </tr>
+
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/gyodae.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/gyodae2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※승차위치: 교대역 8번 출구 200M 전방 르미엘(LEMIEL)
+                        커피숍 앞 (07:30)
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="분당,성남" class="tour-title-td" colspan="2">
+                        분당, 성남
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/bundang2.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/bundang.png" />
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 야탑역 4번 출구 횡단보도 앞 (07:30)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="죽전" class="tour-title-td" colspan="2">죽전</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/jugjeon.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/jugheon2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 죽전역 간이정류장(고속도로) (07:50)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="송내" class="tour-title-td" colspan="2">송내</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/song.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/song2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 송내(남부역) 1번 출구 바닥 14번 표시자리
+                        (07:00)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="잠실" class="tour-title-td" colspan="2">잠실</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img
+                          width="432px"
+                          src="IMG/jam.png
+                        "
+                        />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/jam2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 잠실역 4번 출구 전방 150M 시계탑 앞 (07:00)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="문학경기장" class="tour-title-td" colspan="2">
+                        문학경기장
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/moon.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/moon2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 문학경기장역 1번 출구 (06:40)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="영등포" class="tour-title-td" colspan="2">
+                        영등포
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/yeong.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/yeong2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 영등포역 5번 출구 여의도방향 한국전력 앞
+                        (07:00)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="안산" class="tour-title-td" colspan="2">안산</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/an.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/an2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 중앙역 1번 출구 택시승차장
+                        (07:00)/-----/상록수역 1번 출구 롯데리아 앞 (07:10)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="수원" class="tour-title-td" colspan="2">수원</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/su.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/su2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 수원역 파출소 우측 50M앞 (07:00)
+                        //법원사거리 농협건너편 유산부인과 앞 (07:20) //영통입구
+                        시내버스정류장 (07:30) //수원T/G 입구 버스정류장 (07:35)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="안양" class="tour-title-td" colspan="2">안양</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/anyang.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/anyang2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 안양역 앞 1번가 공영주차장 앞 (07:00)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="범계역" class="tour-title-td" colspan="2">
+                        범계역
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/beom.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/beom2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 범계역 4번 출구 택시승강장 (07:10)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="용인(신갈)" class="tour-title-td" colspan="2">
+                        용인(신갈)
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/yong.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/yong2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 용인시외버스터미널 공영주차장 앞 (07:20)
+                        //명지대사거리근처 삼성디지털 앞 (07:25) //강남대 삼거리
+                        굿모인외과 건물 앞 (07:35) //신갈 고속시외버스정류소
+                        (07:45)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="동탄" class="tour-title-td" colspan="2">동탄</td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/dongtan.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/dong2.png" />
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 동탄 홈플러스 앞 (07:10)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="병점,오산" class="tour-title-td" colspan="2">
+                        병점, 오산
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/byeong.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/byeong2.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 승차위치: 홈플러스 버스정류장(병점) (07:30) //백년회로
+                        한복집(오산) (07:50)
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="셔틀버스등교" class="tour-title-td" colspan="2">
+                        학교 셔틀버스 (등교)
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/goschool.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div
+                          style="
+                            font: normal normal 400 12px / normal dotum,
+                              sans-serif;
+                            width: 400px;
+                            height: 392px;
+                            color: #333;
+                            position: relative;
+                          "
+                        >
+                          <div style="height: 360px">
+                            <a
+                              href="https://map.kakao.com/?urlX=532740.0&amp;urlY=926204.375&amp;name=%EC%B6%A9%EB%82%A8%20%EC%B2%9C%EC%95%88%EC%8B%9C%20%EC%84%9C%EB%B6%81%EA%B5%AC%20%EB%91%90%EC%A0%95%EB%8F%99%2071-16&amp;map_type=TYPE_MAP&amp;from=roughmap"
+                              target="_blank"
+                              ><img
+                                class="map"
+                                src="http://t1.daumcdn.net/roughmap/imgmap/6ad1746a52e8c607f02b2d4603c40d5918c6ea3d3c0a7a3a590842484eefc311"
+                                width="446px"
+                                height="360px"
+                                style="border: 1px solid #ccc"
+                            /></a>
+                          </div>
+                          <div
+                            style="
+                              overflow: hidden;
+                              padding: 7px 11px;
+                              border: 1px solid rgba(0, 0, 0, 0.1);
+                              border-radius: 0px 0px 2px 2px;
+                              background-color: rgb(249, 249, 249);
+                            "
+                          >
+                            <a
+                              href="https://map.kakao.com"
+                              target="_blank"
+                              style="float: left"
+                              ><img
+                                src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
+                                width="72"
+                                height="16"
+                                alt="카카오맵"
+                                style="
+                                  display: block;
+                                  width: 72px;
+                                  height: 16px;
+                                "
+                            /></a>
+                            <div
+                              style="
+                                float: right;
+                                position: relative;
+                                top: 1px;
+                                font-size: 11px;
+                              "
+                            >
+                              <a
+                                target="_blank"
+                                href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%B6%A9%EB%82%A8%20%EC%B2%9C%EC%95%88%EC%8B%9C%20%EC%84%9C%EB%B6%81%EA%B5%AC%20%EB%91%90%EC%A0%95%EB%8F%99%2071-16&amp;eX=532740.0&amp;eY=926204.375"
+                                style="
+                                  float: left;
+                                  height: 15px;
+                                  padding-top: 1px;
+                                  line-height: 15px;
+                                  color: #000;
+                                  text-decoration: none;
+                                "
+                                >길찾기</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 두정역 1번출구 에서 우회전, 제이 식자재마트 앞 탑승
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tour-table">
+                    <tr class="tour-title-tr">
+                      <td id="셔틀버스하교" class="tour-title-td" colspan="2">
+                        학교 셔틀버스 (하교)
+                      </td>
+                    </tr>
+                    <tr class="tour-tr">
+                      <td class="tour-img-td">
+                        <img width="432px" src="IMG/buss.png" />
+                      </td>
+                      <td class="Traffic-map">
+                        <div>
+                          <img width="432px" src="IMG/busss.png" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="tour-info-tr">
+                      <td class="tour-info-td" colspan="2">
+                        ※ 버스 정류장 아래
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- table -->
+                </div>
+              </div>
+
+              <!--  -->
+            </div>
           </article>
         </section>
       </div>
